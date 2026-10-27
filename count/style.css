@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 보라색 그라데이션 배경 + 화면 중앙 정렬 */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: "Pretendard", "Malgun Gothic", sans-serif;
+}
+
+/* 흰색 카드: 숫자 색(초록/빨강)이 배경에 묻히지 않도록 함 */
+.counter {
+  width: 100%;
+  max-width: 380px;
+  padding: 48px 32px 40px;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(50, 30, 100, 0.35);
+  text-align: center;
+}
+
+/* 크고 굵은 숫자 */
+.count {
+  margin-bottom: 36px;
+  font-size: 128px;
+  font-weight: 800;
+  line-height: 1;
+  color: #333;
+  transition: color 0.2s;
+}
+
+/* 양수는 초록색, 음수는 빨간색 (0은 기본색) */
+.count.positive {
+  color: #22a559;
+}
+
+.count.negative {
+  color: #e03e3e;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 둥근 버튼 + 그림자 */
+.btn {
+  width: 64px;
+  height: 64px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.45);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+/* 호버: 살짝 떠오르며 그림자 강화 */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(102, 126, 234, 0.55);
+}
+
+/* 클릭: 눌리는 느낌 */
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
+}
+
+/* 리셋 버튼은 알약 모양 + 회색으로 구분 */
+.btn-reset {
+  width: auto;
+  padding: 0 28px;
+  font-size: 18px;
+  background: #eceefa;
+  color: #5a5f7a;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(90, 95, 122, 0.2);
+}
+
+.btn-reset:hover {
+  box-shadow: 0 10px 22px rgba(90, 95, 122, 0.3);
+}

@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: #f3f4fb;
+  font-family: "Pretendard", "Malgun Gothic", sans-serif;
+  color: #333;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  text-align: center;
+  color: #667eea;
+}
+
+input,
+select {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid #e6e8f5;
+  border-radius: 12px;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #667eea;
+}
+
+#amount {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.row select {
+  flex: 1;
+}
+
+/* 통화 교환 버튼 */
+.swap-btn {
+  flex-shrink: 0;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4c5bc4;
+  background: #eef0fd;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.swap-btn:hover {
+  background: #dfe3fa;
+}
+
+.convert-btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #667eea;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.convert-btn:hover {
+  background: #5568d3;
+}
+
+/* 결과 표시 영역 */
+.result {
+  min-height: 56px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #4c5bc4;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>환율 변환기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">환율 변환기</h1>
+
+    <!-- 금액 입력 (숫자만) -->
+    <input type="number" id="amount" placeholder="금액을 입력하세요" min="0" step="any">
+
+    <!-- 통화 선택 -->
+    <div class="row">
+      <select id="from" aria-label="From 통화">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="KRW">KRW</option>
+        <option value="JPY">JPY</option>
+      </select>
+      <button type="button" id="swap-btn" class="swap-btn">통화 교환</button>
+      <select id="to" aria-label="To 통화">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="KRW" selected>KRW</option>
+        <option value="JPY">JPY</option>
+      </select>
+    </div>
+
+    <button id="convert" class="convert-btn">통화 변환</button>
+
+    <!-- 결과 표시 영역 -->
+    <div id="result" class="result"></div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

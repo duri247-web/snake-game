@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 16px;
+  background: #f3f4fb;
+  font-family: "Pretendard", "Malgun Gothic", sans-serif;
+  color: #333;
+}
+
+/* 중앙 정렬 카드, 최대 너비 500px */
+.card {
+  width: 100%;
+  max-width: 500px;
+  padding: 32px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.title {
+  margin-bottom: 24px;
+  font-size: 26px;
+  text-align: center;
+  color: #667eea;
+}
+
+/* 입력창 + 추가 버튼 */
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.input-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #e6e8f5;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-row input:focus {
+  border-color: #667eea;
+}
+
+.add-btn {
+  padding: 0 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #667eea;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #5568d3;
+}
+
+/* 전체/완료 개수 */
+.stats {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #888;
+  text-align: right;
+}
+
+/* 할 일 목록 */
+.todo-list {
+  margin-top: 8px;
+  list-style: none;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 4px;
+  border-bottom: 1px solid #eef0fa;
+}
+
+.todo-list li span {
+  flex: 1;
+  word-break: break-all;
+}
+
+.todo-list li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #667eea;
+  cursor: pointer;
+}
+
+/* 삭제 버튼 */
+.del-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #e03e3e;
+  background: #fdecec;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.del-btn:hover {
+  background: #fbd5d5;
+}
+
+/* 완료된 항목: 취소선 */
+.todo-list li.done span {
+  text-decoration: line-through;
+  color: #aaa;
+}

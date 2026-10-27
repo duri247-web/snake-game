@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 화면 중앙 정렬 */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4fb;
+  font-family: "Pretendard", "Malgun Gothic", sans-serif;
+}
+
+.counter {
+  text-align: center;
+}
+
+/* 큰 숫자 */
+.count {
+  font-size: 120px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  min-width: 72px;
+  padding: 14px 24px;
+  font-size: 24px;
+  color: #fff;
+  background: #667eea;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #5568d3;
+}
+
+/* 리셋 버튼은 회색으로 구분 */
+.btn-reset {
+  background: #9aa0b5;
+  font-size: 18px;
+}
+
+.btn-reset:hover {
+  background: #7f8599;
+}

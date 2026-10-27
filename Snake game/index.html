@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스네이크 게임</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="header">
+      <h1 class="title">SNAKE</h1>
+      <!-- 소리 켜기/끄기 -->
+      <button id="sound-btn" class="sound-btn" aria-label="소리 켜기/끄기">🔊</button>
+    </header>
+
+    <!-- 난이도 선택 (게임 중에는 변경 불가) -->
+    <div class="difficulty">
+      <label for="difficulty">난이도</label>
+      <select id="difficulty">
+        <option value="200">쉬움 (200ms)</option>
+        <option value="150" selected>보통 (150ms)</option>
+        <option value="100">어려움 (100ms)</option>
+        <option value="50">매우 어려움 (50ms)</option>
+      </select>
+    </div>
+
+    <!-- 점수 표시 -->
+    <div class="scores">
+      <div class="score-box">
+        <span class="label">점수</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="score-box">
+        <span class="label">레벨</span>
+        <strong id="level">1</strong>
+      </div>
+      <div class="score-box best">
+        <span class="label">최고 점수</span>
+        <strong id="high-score">0</strong>
+      </div>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="board" width="400" height="400"></canvas>
+    </div>
+
+    <p id="message" class="message">방향키로 뱀을 조종하세요</p>
+
+    <button id="start-btn" class="btn">게임 시작</button>
+    <button id="pause-btn" class="btn hidden">일시정지</button>
+    <button id="restart-btn" class="btn hidden">다시 시작</button>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

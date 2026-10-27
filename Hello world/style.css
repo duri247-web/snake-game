@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: #f3f4fb;
+  font-family: "Pretendard", "Malgun Gothic", sans-serif;
+  color: #333;
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  padding: 40px 32px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+  text-align: center;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background: #667eea;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 24px;
+  color: #667eea;
+}
+
+.job {
+  margin-top: 4px;
+  color: #777;
+}
+
+.hobbies {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #e6e8f5;
+}
+
+.hobbies h2 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #667eea;
+}
+
+.hobbies ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hobbies li {
+  padding: 6px 14px;
+  font-size: 14px;
+  background: #eef0fd;
+  color: #4c5bc4;
+  border-radius: 999px;
+}
